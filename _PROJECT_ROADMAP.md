@@ -6,16 +6,16 @@
 
 # 📊 Project Status
 
-| Phase | Status |
-|---------|--------|
-| Backend Development | ✅ Completed (CRUD) |
-| Code Review & Refactor | 🔄 In Progress |
-| Testing | ⏳ Pending |
-| Docker | ⏳ Pending |
-| Deployment | ⏳ Pending |
-| ML Pipeline | ⏳ Pending |
-| Deep Learning (PyTorch) | ⏳ Pending |
-| Monitoring | ⏳ Pending |
+| Phase                   | Status              |
+| ----------------------- | ------------------- |
+| Backend Development     | ✅ Completed (CRUD) |
+| Code Review & Refactor  | ✅ Completed        |
+| Testing                 | ✅ Completed        |
+| Docker                  | ⏳ Pending          |
+| Deployment              | ⏳ Pending          |
+| ML Pipeline             | ⏳ Pending          |
+| Deep Learning (PyTorch) | ⏳ Pending          |
+| Monitoring              | ⏳ Pending          |
 
 ---
 
@@ -29,11 +29,11 @@ Menyatukan seluruh project agar hanya menggunakan SQLModel.
 
 ### Checklist
 
-- [ ] Audit seluruh model
-- [ ] Migrasi User ke SQLModel
-- [ ] Menghapus SQLAlchemy Declarative
-- [ ] Alembic membaca SQLModel.metadata
-- [ ] CRUD tetap berjalan
+- [x] Audit seluruh model
+- [x] Migrasi User ke SQLModel
+- [x] Menghapus SQLAlchemy Declarative
+- [x] Alembic membaca SQLModel.metadata
+- [x] CRUD tetap berjalan
 
 Status:
 
@@ -49,10 +49,10 @@ Menyatukan seluruh dependency database.
 
 Checklist
 
-- [ ] Konsisten menggunakan SQLModel Session
-- [ ] Konsisten menggunakan get_session()
-- [ ] Menghapus get_db() lama
-- [ ] Review transaction
+- [x] Konsisten menggunakan SQLModel Session
+- [x] Konsisten menggunakan get_session()
+- [x] Menghapus get_db() lama
+- [x] Review transaction
 
 Status
 
@@ -64,12 +64,12 @@ Status
 
 Checklist
 
-- [ ] Include auth router
-- [ ] Register
-- [ ] Login
-- [ ] JWT
-- [ ] Current User
-- [ ] Password Hash
+- [x] Include auth router
+- [x] Register
+- [x] Login
+- [x] JWT
+- [x] Current User
+- [x] Password Hash
 
 Status
 
@@ -215,14 +215,14 @@ Status
 
 # 📌 Technical Debt
 
-| ID | Priority | Status | Description |
-|----|----------|--------|-------------|
-| BE-001 | Critical | ⏳ | Satukan ORM menjadi SQLModel |
-| BE-002 | Critical | ⏳ | Konsisten Session Database |
-| BE-003 | Critical | ⏳ | Include Auth Router |
-| BE-004 | High | ⏳ | Tambahkan User ↔ Task Relationship |
-| BE-005 | Medium | ⏳ | Pisahkan Models & Schemas |
-| BE-006 | Medium | ⏳ | Hapus Dead Code |
+| ID     | Priority | Status | Description                        |
+| ------ | -------- | ------ | ---------------------------------- |
+| BE-001 | Critical | ⏳     | Satukan ORM menjadi SQLModel       |
+| BE-002 | Critical | ⏳     | Konsisten Session Database         |
+| BE-003 | Critical | ⏳     | Include Auth Router                |
+| BE-004 | High     | ⏳     | Tambahkan User ↔ Task Relationship |
+| BE-005 | Medium   | ⏳     | Pisahkan Models & Schemas          |
+| BE-006 | Medium   | ⏳     | Hapus Dead Code                    |
 
 ---
 
