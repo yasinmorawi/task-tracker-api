@@ -1,6 +1,6 @@
-from typing import Optional 
+from typing import List, Optional 
 from datetime import datetime, UTC
-from sqlmodel import Field, SQLModel
+from sqlmodel import Field, Relationship , SQLModel
 
 class User(SQLModel, table=True):
     __tablename__ = "users"
@@ -8,6 +8,8 @@ class User(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True, index=True)
     email: str = Field(unique=True, index=True)
     hashed_password: str
+
+    tasks: List["Task"] = Relationship(back_populates="owner")
 
 class Task(SQLModel, table=True):
     __tablename__ = "tasks"
@@ -22,3 +24,4 @@ class Task(SQLModel, table=True):
 
     # Perbaikan: foreign_key disesuikan dengan __tablename__ milik user
     user_id: int = Field(foreign_key="users.id", index=True)
+    owner: User = Relationship(back_populates="tasks")

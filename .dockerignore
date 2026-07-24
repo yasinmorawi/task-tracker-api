@@ -1,0 +1,13 @@
+.venv
+__pycache__
+*.pyc
+.git
+.gitignore
+.env
+tests
+_PROJECT_ROADMAP.md
+_REFACTOR_PLAN.md
+.pytest_cache
+.ruff_cache
+htmlcov
+.coverage
